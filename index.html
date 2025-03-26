@@ -1,55 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles.css">
   <title>Group 3 Project - News homepage</title>
 </head>
+
 <body>
+  <div class="container">
+    <header class="header">
+      <div class="logo">
+        <img src="./assets/images/logo.svg" alt="Logo">
+      </div>
+      <nav class="nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">New</a></li>
+          <li><a href="#">Popular</a></li>
+          <li><a href="#">Trending</a></li>
+          <li><a href="#">Categories</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  Home
-  New
-  Popular
-  Trending
-  Categories
+    <main class="main">
+      <div class="thumnail">
+        <div class="thumnail-image">
+          <img src="./assets/images/image-web-3-desktop.jpg" alt="Web 3.0 Illustration">
+        </div>
 
-  The Bright Future of Web 3.0?
+        <div class="content">
+          <h1>The Bright Future of Web 3.0?</h1>
+          <div class="content-text">
+            <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the
+              hands of
+              the people.
+              But is it really fulfilling its promise?</p>
 
-  We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
-  But is it really fulfilling its promise?
+            <button classs="read-more">Read more</button>
+          </div>
+        </div>
+      </div>
 
-  Read more
+      <aside class="new-articles">
+        <h2>New</h2>
+        <div class="article">
+          <h3>Hydrogen VS Electric Cars</h3>
+          <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+        </div>
+        <hr>
+        <div class="article">
+          <h3>The Downsides of AI Artistry</h3>
+          <p>What are the possible adverse effects of on-demand AI image generation?</p>
+        </div>
+        <hr>
+        <div class="article">
+          <h3>Is VC Funding Drying Up?</h3>
+          <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+        </div>
+      </aside>
+      <section class="main-articles">
+        <article class="main">
+          <img src="./assets/images/image-retro-pcs.jpg" alt="Retro PCs">
+          <div class="article-content">
+            <span class="number">01</span>
+            <h3>Reviving Retro PCs</h3>
+            <p>What happens when old PCs are given modern upgrades?</p>
+          </div>
+        </article>
 
-  New 
+        <article class="main">
+          <img src="./assets/images/image-top-laptops.jpg" alt="Top Laptops">
+          <div class="article-content">
+            <span class="number">02</span>
+            <h3>Top 10 Laptops of 2022</h3>
+            <p>Our best picks for various needs and budgets.</p>
+          </div>
+        </article>
 
-  Hydrogen VS Electric Cars
-  Will hydrogen-fueled cars ever catch up to EVs?
-
-  The Downsides of AI Artistry
-  What are the possible adverse effects of on-demand AI image generation?
-
-  Is VC Funding Drying Up?
-  Private funding by VC firms is down 50% YOY. We take a look at what that means.
-
-  01
-  Reviving Retro PCs
-  What happens when old PCs are given modern upgrades?
-
-  02
-  Top 10 Laptops of 2022
-  Our best picks for various needs and budgets.
-
-  03
-  The Growth of Gaming
-  How the pandemic has sparked fresh opportunities.
-  
-  <!-- Project credits -->
-  <footer>
-    <div class="attribution">
-      Challenge prepared by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name(s) Here</a>.
-    </div>
-  </footer>
+        <article class="main">
+          <img src="./assets/images/image-gaming-growth.jpg" alt="Gaming Growth">
+          <div class="article-content">
+            <span class="number">03</span>
+            <h3>The Growth of Gaming</h3>
+            <p>How the pandemic has sparked fresh opportunities.</p>
+          </div>
+        </article>
+      </section>
+    </main>
+    <!-- Project credits -->
+    <footer class="footer">
+      <div class="attribution">
+        Challenge prepared by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend
+          Mentor</a>.
+        Coded by <a href="#">Your Name(s) Here</a>.
+      </div>
+    </footer>
+  </div>
 </body>
+
 </html>
