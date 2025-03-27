@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
   <title>Group 3 Project - News homepage</title>
 </head>
 
@@ -28,9 +28,13 @@
     </header>
 
     <main class="main">
+      <div class="container-1">
       <div class="thumnail">
         <div class="thumnail-image">
-          <img src="./assets/images/image-web-3-desktop.jpg" alt="Web 3.0 Illustration">
+          <picture>
+          <source srcset="./assets/images/image-web-3-mobile.jpg" media="(max-width: 700px)">
+          <img src="./assets/images/image-web-3-desktop.jpg" alt="Web 3.0 Illustration" width="100%" height="350px">
+          </picture>
         </div>
 
         <div class="content">
@@ -41,7 +45,7 @@
               the people.
               But is it really fulfilling its promise?</p>
 
-            <button classs="read-more">Read more</button>
+            <button class="read-more">Read more</button>
           </div>
         </div>
       </div>
@@ -63,6 +67,7 @@
           <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
         </div>
       </aside>
+      </div>
       <section class="main-articles">
         <article class="main">
           <img src="./assets/images/image-retro-pcs.jpg" alt="Retro PCs">

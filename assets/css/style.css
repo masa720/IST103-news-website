@@ -1,0 +1,238 @@
+@font-face {
+    font-family: 'Inter-Regular';
+    src: url('../fonts/static/Inter-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Inter-Bold';
+    src: url('../fonts/static/Inter-Bold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'Inter-ExtraBold';
+    src: url('../fonts/static/Inter-ExtraBold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: bolder;
+}
+:root{
+    
+--Soft-orange: hsl(35, 77%, 62%);
+--Soft-red: hsl(5, 85%, 63%);
+--Off-white: hsl(36, 100%, 99%);
+--Grayish-blue: hsl(233, 8%, 79%);
+--Dark-grayish-blue: hsl(236, 13%, 42%);
+--Very-dark-blue: hsl(240, 100%, 5%);
+}
+body{
+    font-family: 'Inter-Regular';
+}
+p{
+    font-size: 15px;
+}
+.container{
+    padding: 50px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.nav ul{
+    display: flex;
+    column-gap: 40px;
+    list-style: none;
+}
+.nav ul li a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: var(--Dark-grayish-blue);
+}
+
+.nav ul li a:hover{
+    color: var(--Soft-red);
+}
+
+.container-1{
+    display: flex;
+    margin-top: 50px;
+    column-gap: 30px;
+}
+
+.thumnail{
+    width: calc(70% - 15px);
+}
+
+aside{
+    width: calc(30% - 15px);
+    background-color: var(--Very-dark-blue);
+    color: var(--Grayish-blue);
+    padding: 25px;
+}
+
+aside h2{
+    color: var(--Soft-orange);
+    font-family: 'Inter-Bold';
+    font-size: 3rem;
+    margin: unset;
+}
+
+aside h3{
+    color: #ffffff;
+    font-family: 'Inter-Bold';
+    font-size: 1.3rem;
+    margin-bottom: unset;
+}
+
+aside h3:hover{
+    color: var(--Soft-orange);
+}
+
+.article{
+
+    padding: 15px 0px; 
+}
+
+hr{
+    border-color: var(--Grayish-blue);
+}
+.content{
+    display: flex;
+    column-gap: 60px;
+    margin-top: 25px;
+}
+
+.content > *{
+    width: calc(50% - 47px);
+}
+
+.content h1{
+    font-family: 'Inter-ExtraBold';
+    font-size: 4rem;
+    color: var(--Very-dark-blue);
+    margin: unset;
+}
+.content-text{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.content-text p{
+    font-size: 16px;
+    color: var(--Dark-grayish-blue);
+    line-height: 2;
+}
+
+.read-more{
+    background-color: var(--Soft-red);
+    width: 50%;
+    color: #ffffff;
+    padding: 20px;
+    border: none;
+    font-family: 'Inter-Bold';
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    cursor: pointer;
+}
+
+.read-more:hover{
+    background-color: var(--Very-dark-blue);
+}
+
+.main-articles{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+}
+
+.main-articles .main{
+    display: flex;
+    column-gap: 30px;
+    width: calc(33% - 20px);
+}
+
+article img{
+    height: 60%;
+}
+.number{
+    color: var(--Grayish-blue);
+    font-size: 2rem;
+    font-family: 'Inter-Bold';
+}
+.article-content h3{
+    font-family: 'Inter-Bold';
+    color: var(--Very-dark-blue);
+    font-size: 1.2rem;
+
+}
+
+.article-content p{
+    color: var(--Dark-grayish-blue);
+    line-height: 2;
+}
+
+.attribution{
+
+    text-align: center;
+}
+
+/*Media Querys*/
+
+@media (width < 700px){
+
+    .container{
+        padding: 10px;
+    }
+    .content{
+        flex-wrap: wrap;
+    }
+    .content h1{
+        font-size: 2.2rem;
+    }
+    .content-text{
+        text-align: left;
+    }
+    .read-more{
+        width: fit-content;
+        font-size: 1rem;
+    }
+    .container-1{
+        flex-wrap: wrap;
+    }
+    .nav ul{
+        flex-direction: column;
+    }
+    .thumnail{
+        width: 100%;
+    }
+    aside{
+        margin-top: 40px;
+        width: 100%;
+    }
+
+    aside h2{
+        font-size: 2rem;
+    }
+
+    .content > * {
+        width: auto;
+    }
+
+    .main-articles{
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .main-articles .main{
+        width: auto;
+    }
+
+    article img{
+        height: auto;
+    }
+
+    .footer{
+        margin-top: 20px;
+    }
+}
