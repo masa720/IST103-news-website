@@ -86,6 +86,7 @@ aside h3{
 
 aside h3:hover{
     color: var(--Soft-orange);
+    cursor: pointer;
 }
 
 .article{
@@ -166,6 +167,10 @@ article img{
     color: var(--Very-dark-blue);
     font-size: 1.2rem;
 
+}
+.article-content h3:hover{
+    cursor: pointer;
+    color: var(--Soft-red);
 }
 
 .article-content p{
