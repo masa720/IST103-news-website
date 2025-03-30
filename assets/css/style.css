@@ -179,8 +179,12 @@ article img{
 }
 
 .attribution{
-
     text-align: center;
+}
+
+.article-link {
+    text-decoration: none;
+    color: inherit;
 }
 
 /*Media Querys*/
