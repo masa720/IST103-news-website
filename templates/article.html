@@ -8,51 +8,38 @@
 </head>
 
 <body>
-  <nav class="navbar">
-    <div class="logo">W.</div>
-    <div class="nav-links">
-      <a href="#">Home</a>
-      <a href="#">New</a>
-      <a href="#">Popular</a>
-      <a href="#">Trending</a>
-      <a href="#">Categories</a>
+  <div class="container">
+    <header class="header">
+      <div class="logo">
+        <img src="../assets/images/logo.svg" alt="Logo">
+      </div>
+      <nav class="nav">
+        <ul>
+          <li><a href="/" onclick="redirectToHome(event)">Home</a></li>
+          <li><a href="#">New</a></li>
+          <li><a href="#">Popular</a></li>
+          <li><a href="#">Trending</a></li>
+          <li><a href="#">Categories</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="article-container">
+      <main class="article-main">
+        <div class="article-header">
+          <h1 class="article-title" id="article-title"></h1>
+          <div class="article-meta">Published on <span id="published-date"></span> by <span
+              id="author-name"></span></div>
+        </div>
+
+        <img src="" alt="Web 3.0 concept" class="article-image" id="article-image">
+
+        <div class="article-content" id="article-content">
+        </div>
+      </main>
     </div>
-  </nav>
-
-  <div class="article-container">
-    <main class="article-main">
-      <div class="article-header">
-        <h1 class="article-title">The Bright Future of Web 3.0?</h1>
-        <div class="article-meta">Published on January 15, 2023 by Jose Parraga</div>
-      </div>
-
-      <img src="../assets/images/image-web-3-desktop.jpg" alt="Web 3.0 concept" class="article-image">
-
-      <div class="article-content">
-        <p>The next evolution of the web promises to decentralize power and put control back into the hands of users.
-          Web 3.0, built on blockchain technology, claims to create a more open, transparent, and user-owned internet
-          experience. But as with any technological revolution, the reality may be more complex than the promise.</p>
-
-        <h2>What is Web 3.0?</h2>
-        <p>Unlike Web 1.0 (the read-only web) and Web 2.0 (the read-write web dominated by social platforms), Web 3.0
-          introduces the concept of the read-write-own web. It leverages blockchain to create decentralized applications
-          (dApps) where users maintain control over their data and digital assets.</p>
-
-        <h2>The Promise of Decentralization</h2>
-        <p>Proponents argue that Web 3.0 will break the monopoly of tech giants by eliminating intermediaries. Imagine
-          social networks where you own your content and relationships, marketplaces without platform fees, and digital
-          identities you control completely.</p>
-
-        <h2>The Challenges Ahead</h2>
-        <p>However, significant hurdles remain. Current blockchain networks struggle with scalability issues, energy
-          consumption concerns, and complex user experiences. There's also debate about whether true decentralization is
-          possible, or if power will simply concentrate in new forms.</p>
-
-        <p>The journey to Web 3.0 is just beginning, and its ultimate shape remains uncertain. What's clear is that the
-          conversation about who controls the internet and how it should evolve is more important than ever.</p>
-      </div>
-    </main>
   </div>
+  <script src="../scripts/article.js"></script>
 </body>
 
 </html>

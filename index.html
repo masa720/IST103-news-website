@@ -18,7 +18,7 @@
       </div>
       <nav class="nav">
         <ul>
-          <li><a href="#">Home</a></li>
+          <li><a href="/" onclick="redirectToHome(event)">Home</a></li>
           <li><a href="#">New</a></li>
           <li><a href="#">Popular</a></li>
           <li><a href="#">Trending</a></li>
@@ -27,53 +27,53 @@
       </nav>
     </header>
 
-    <main class="main">
+    <main class="main" id="main">
       <div class="container-1">
-      <div class="thumnail">
-        <div class="thumnail-image">
-          <picture>
-          <source srcset="./assets/images/image-web-3-mobile.jpg" media="(max-width: 700px)">
-          <img src="./assets/images/image-web-3-desktop.jpg" alt="Web 3.0 Illustration" width="100%" height="350px">
-          </picture>
-        </div>
+        <div class="thumnail">
+          <div class="thumnail-image">
+            <picture>
+              <source srcset="./assets/images/image-web-3-mobile.jpg" media="(max-width: 700px)">
+              <img src="./assets/images/image-web-3-desktop.jpg" alt="Web 3.0 Illustration" width="100%" height="350px">
+            </picture>
+          </div>
 
-        <div class="content">
-          <h1>The Bright Future of Web 3.0?</h1>
-          <div class="content-text">
-            <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the
-              hands of
-              the people.
-              But is it really fulfilling its promise?</p>
+          <div class="content">
+            <h1>The Bright Future of Web 3.0?</h1>
+            <div class="content-text">
+              <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the
+                hands of
+                the people.
+                But is it really fulfilling its promise?</p>
 
-            <button class="read-more">Read more</button>
+              <button class="read-more" onclick="redirectToArticle(event, 4)">Read more</button>
+            </div>
           </div>
         </div>
-      </div>
 
-      <aside class="new-articles">
-        <h2>New</h2>
-        <div class="article">
-          <h3>Hydrogen VS Electric Cars</h3>
-          <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
-        </div>
-        <hr>
-        <div class="article">
-          <h3>The Downsides of AI Artistry</h3>
-          <p>What are the possible adverse effects of on-demand AI image generation?</p>
-        </div>
-        <hr>
-        <div class="article">
-          <h3>Is VC Funding Drying Up?</h3>
-          <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
-        </div>
-      </aside>
+        <aside class="new-articles">
+          <h2>New</h2>
+          <div class="article">
+            <h3><a href="#" class="article-link" onclick="redirectToArticle(event, 5)">Hydrogen VS Electric Cars</a></h3>
+            <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+          </div>
+          <hr>
+          <div class="article">
+            <h3><a href="#" class="article-link" onclick="redirectToArticle(event, 6)">The Downsides of AI Artistry</a></h3>
+            <p>What are the possible adverse effects of on-demand AI image generation?</p>
+          </div>
+          <hr>
+          <div class="article">
+            <h3><a href="#" class="article-link" onclick="redirectToArticle(event, 7)">Is VC Funding Drying Up?</a></h3>
+            <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+          </div>
+        </aside>
       </div>
       <section class="main-articles">
         <article class="main">
           <img src="./assets/images/image-retro-pcs.jpg" alt="Retro PCs">
           <div class="article-content">
             <span class="number">01</span>
-            <h3>Reviving Retro PCs</h3>
+            <h3><a href="#" class="article-link" onclick="redirectToArticle(event, 1)">Reviving Retro PCs</a></h3>
             <p>What happens when old PCs are given modern upgrades?</p>
           </div>
         </article>
@@ -82,7 +82,7 @@
           <img src="./assets/images/image-top-laptops.jpg" alt="Top Laptops">
           <div class="article-content">
             <span class="number">02</span>
-            <h3>Top 10 Laptops of 2022</h3>
+            <h3><a href="#" class="article-link" onclick="redirectToArticle(event, 2)">Top 10 Laptops of 2022</a></h3>
             <p>Our best picks for various needs and budgets.</p>
           </div>
         </article>
@@ -91,7 +91,7 @@
           <img src="./assets/images/image-gaming-growth.jpg" alt="Gaming Growth">
           <div class="article-content">
             <span class="number">03</span>
-            <h3>The Growth of Gaming</h3>
+            <h3><a href="#" class="article-link" onclick="redirectToArticle(event, 3)">The Growth of Gaming</a></h3>
             <p>How the pandemic has sparked fresh opportunities.</p>
           </div>
         </article>
@@ -108,6 +108,6 @@
   </div>
   <div class="overlay"></div>
   <script src="./script/hamburger.js"></script>
+  <script src="./scripts/router.js"></script>
 </body>
-
 </html>
