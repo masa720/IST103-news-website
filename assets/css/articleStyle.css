@@ -148,7 +148,7 @@ body.menu-open .overlay {
     position: fixed;
     top: 0;
     right: -100%;
-    width: 70%;
+    width: 60%;
     height: 100vh;
     background-color: white;
     padding: 2rem;
@@ -164,7 +164,8 @@ body.menu-open .overlay {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    margin-top: 4rem;
+    margin-top: 10rem;
+    padding-left: 0rem;
   }
 
   .nav ul li a {
